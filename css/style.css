@@ -80,9 +80,38 @@ main {
     z-index: -1;
 }
 
-.container:hover .bottom{
+.container:hover .bottom {
     z-index: 1;
 }
 
 /* Descrizione prodotto */
+.description {
+    margin-top: 0.4rem;
+}
 
+.brand {
+    font-size: 0.9rem;
+}
+
+.name {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 0.9rem;
+}
+
+.price>*::after {
+    content: "\20AC";
+}
+
+.price .new {
+    color: #EB0037;
+    font-weight: bold;
+
+}
+
+.price .old {
+    text-decoration: line-through;
+}
