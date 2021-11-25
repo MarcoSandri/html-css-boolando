@@ -4,3 +4,85 @@ body {
     margin: 0;
 }
 
+main {
+    width:80vw;
+    margin: 1rem auto;
+    background-color:tomato;
+}
+
+.product{
+    display: inline-block;
+    width: 30%;
+}
+
+/* Container foto e tag */
+
+.container {
+    position: relative;
+}
+
+/* Posizionamento tag e cuore */
+
+.container .heart::before {
+    content:"\2665";
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    position:absolute;
+    top: 1rem;
+    right:0;
+    z-index: 2;
+}
+
+.container .tag{
+    position:absolute;
+    bottom: 1.3rem;
+    z-index: 2;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Stili tag */
+
+.discount {
+    background-color: #EB0037;
+    padding: 0.3rem;
+}
+
+.discount::before {
+    content:"\002D";
+}
+
+.discount::after {
+    content:"\0025";
+}
+
+.sustainability {
+    background-color: #00875A;
+    padding:0.3rem;
+}
+
+/* Immagini */
+
+.container img {
+    width: 100%;
+}
+
+/* Immagini che cambiano */
+
+.bottom {
+    position:absolute;
+    right:0;
+    z-index: -1;
+}
+
+.container:hover .bottom{
+    z-index: 1;
+}
+
+/* Descrizione prodotto */
+
