@@ -1,3 +1,7 @@
+html {
+    font-size: 1vw;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
